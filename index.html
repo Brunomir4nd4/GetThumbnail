@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Youtube Thumbnail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="conteiner_cabesalho text_center">
+        <h2><small>Neste site você pode colar qualquer link de video que te retornará a Thumbnail </small></h2> 
+    </header>
+
+    <main class="conteiner_conteudo text_center">
+        <h1 class="">Get Youtube Thumbnail</h1>
+        <input class="conteudo_input text_center" type="url" id="link_video" name="link_video" required>
+        <button class="conteudo_button" onclick="get_thumbnail()">Get it now!</button>
+
+        <div class="conteudo_img">
+            <img id="img" src="">
+        </div>
+
+    </main>
+
+    <footer class="conteiner_rodape text_center">
+        <small><i>Creditos: BRUNO MIRANDA BENTO &copy;</i></small>
+    </footer>
+
+<script>
+    function get_thumbnail(){
+    link_video = document.getElementById('link_video').value
+    video_id = link_video.split('v=') [1]
+    document.getElementById("img").setAttribute('src', `https://i3.ytimg.com/vi/${video_id}/maxresdefault.jpg`)
+}
+</script>
+
+</body>
+</html>
