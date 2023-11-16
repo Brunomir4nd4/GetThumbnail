@@ -1,2 +1,2 @@
 # GetThumbnail
-Neste site é possivel retirar qualquer thumbnail, de videos do YouTube que o usuário desejar, atravez do link do video
+ Neste site é possível retirar qualquer thumbnail, de vídeos do YouTube que o usuário desejar, através do link do vídeo
